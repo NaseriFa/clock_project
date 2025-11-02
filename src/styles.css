@@ -1,0 +1,106 @@
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    flex-direction: column; 
+    gap:30px;
+    background: linear-gradient(91.7deg, rgb(50, 25, 79) -4.3%, rgb(122, 101, 149) 101.8%);
+}
+
+.container {
+    width:600px;
+    padding: 50px;
+    border-radius:25px;
+    box-shadow: 0px 0px 30px rgba(255,255,255,0.8);
+    line-height:1.5;
+}
+.time {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color:white;
+  gap: 10px; /* Abstand zwischen Stunden und Details */
+}
+
+.time #hour {
+  font-size: 90px;
+}
+
+.details {
+  display: flex;
+  flex-direction: column; /* Stunden, Symbol, Sekunden untereinander */
+  align-items: center;
+  font-size: 65px;
+  position: relative;
+}
+
+#minutes {
+  font-size: 90px;
+}
+
+#symbol, #seconds {
+  font-size: 25px; /* kleiner als Minuten */
+}
+#symbol{
+    position:relative;
+    top:-38px;
+    color:rgb(207, 200, 215);
+}
+#seconds{
+    position:relative;
+    left:-35px;
+    color:rgb(207, 200, 215);
+}
+.date{
+    text-align:center;
+    font-size:18px;
+    position:relative;
+    left:-15px;
+    color:rgb(48, 33, 61);
+    font-weight:bolder;
+}
+.city{
+    text-align:center;
+    position:relative;
+    left:-15px;
+    color:rgb(48, 33, 61);
+    font-size:16px;
+    margin-top:10px;
+    color:rgb(207, 200, 215);
+}
+.city #city-name{
+    color:rgb(207, 200, 215);
+}
+select{
+    display:block;
+    width:70%;
+    margin:15px auto 0 auto;
+    padding:15px 20px;
+    border-radius:30px;
+    box-shadow:3px 3px 5px  rgb(48, 33, 61);
+    background-color: rgb(207, 200, 215);
+    color:rgb(48, 33, 61);
+    font-size:16px;
+    cursor:pointer;
+}
+select:focus {
+  outline: 2px solid rgb(48, 33, 61);
+  outline-offset: 2px;
+  border:none;
+}
+select option{
+    background-color:rgb(207, 200, 215);
+    color:rgb(48, 33, 61);
+    cursor:pointer;
+}
+.footer{
+    color:rgb(207, 200, 215);
+    font-size:16px;
+}
+.footer a{
+    color:rgb(48, 33, 61);
+    font-weight:bolder;
+}

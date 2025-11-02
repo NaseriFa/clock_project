@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>World Clock</title>
+
+    <!-- Load Moment.js for date/time formatting -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.30.1/moment.min.js"></script>
+    <!-- Load Moment Timezone for handling time zones -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.6.0/moment-timezone-with-data-1970-2030.min.js"></script>
+
+    <!-- External stylesheet -->
+    <link rel="stylesheet" href="src/styles.css">
+</head>
+<body>
+    <!-- Main clock container -->
+    <div class="container">
+
+        <!-- Time display section -->
+        <div class="time">
+            <!-- Hours -->
+            <span id="hour">01:</span>
+
+            <!-- Minutes, AM/PM symbol, and seconds -->
+            <span id="details">
+                <span id="minutes">47</span>
+                <span id="symbol">PM</span>
+                <span id="seconds">56</span>
+            </span> 
+        </div>
+
+        <!-- Current date -->
+        <div class="date">
+            Aug, Tuesday 2 2025
+        </div>
+
+        <!-- City name display -->
+        <div class="city">
+            currently in <span id="city-name">Berlin</span>
+        </div>
+
+        <!-- Dropdown menu to select a city/time zone -->
+        <select name="city" id="city">
+            <option value="">currently in...</option>
+            <option value="current">My Timezone</option>
+            <option value="Europe/Berlin">Berlin</option>
+            <option value="Europe/Paris">Paris</option>
+            <option value="America/New_York">New York</option>
+            <option value="Asia/Tokyo">Tokyo</option>
+        </select>
+    </div>
+
+    <!-- Footer section -->
+    <div class="footer">
+        coded by
+        <a href="https://github.com/NaseriFa">Fatima Naseri</a>, open-sourced on
+        <a href="https://github.com/NaseriFa/clock_project">GitHub</a> and 
+        <a href="#">Netlify</a>
+    </div>
+
+    <!-- JavaScript file for updating time -->
+    <script src="src/index.js"></script>
+</body>
+</html>
